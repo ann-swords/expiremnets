@@ -26,7 +26,7 @@ app.get('/', (req,res)=>{
     .then(function (response) {
         let manga = response.data.data.series 
         // console.log(manga);
-        res.send(manga)
+        // res.send(manga)
         res.render('home', {manga})
         // console.log(manga.ChapterUrl)
     })
