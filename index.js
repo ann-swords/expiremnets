@@ -24,7 +24,7 @@ const options = {
 app.get('/', (req,res)=>{
     axios.request(options)
     .then(function (response) {
-        let manga = response.data.data.series 
+        let manga = response.data.data.series[0]
         // console.log(manga);
         // res.send(manga)
         res.render('home', {manga})
